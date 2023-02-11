@@ -3,7 +3,7 @@ import UserHome from "@views/pages/user_home";
 
 export const ROUTES = {
  
-  USER_HOME: "/home",
+  USER_HOME: "/",
  
 };
 
