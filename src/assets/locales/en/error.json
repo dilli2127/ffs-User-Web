@@ -1,0 +1,15 @@
+{
+  "username_mandatory": "Username is mandatory",
+  "name_mandatory": "Name is mandatory",
+  "city_mandatory": "City is mandatory",
+  "district_mandatory": "District is mandatory",
+  "address_mandatory": "Address is mandatory",
+  "email_mandatory": "Email is mandatory",
+  "email_not_valid": "Enter a valid email",
+  "mobile_mandatory": "Mobile is mandatory",
+  "mobile_not_valid": "Enter a valid mobile number",
+  "password_mandatory": "Password is mandatory",
+  "confirm_password_mandatory": "Confirm password is mandatory",
+  "confirm_password_no_match": "Password does not match",
+  "error_message": "Please check and fix the fields with errors"
+}

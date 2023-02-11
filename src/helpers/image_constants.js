@@ -1,0 +1,12 @@
+export const APP_ICON = require("../assets/icons/vertace.png");
+export const VERTACE_ICON = require("../assets/icons/vertace.png");
+export const HANDS_ICON = require("../assets/icons/hands.png");
+export const GOOGLE_ICON = require("../assets/icons/google.png");
+export const FACEBOOK_ICON = require("../assets/icons/facebook.png");
+export const APPLE_ICON = require("../assets/icons/apple.png");
+export const PROFILE_ICON = require("../assets/icons/profile.png");
+export const BANNER_ICON = require("../assets/icons/banner.png");
+export const FILTER_ICON = require("../assets/icons/filter.png");
+export const CLOSE_ICON = require("../assets/icons/close-circle.png");
+export const HEART_ICON = require("../assets/icons/heart.png");
+export const BOOKMARK_ICON = require("../assets/icons/bookmark.png");

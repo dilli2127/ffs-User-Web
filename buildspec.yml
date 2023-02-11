@@ -1,0 +1,32 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+    commands:
+      - echo "Building source..."
+      - npm i yarn@latest -g
+      - npm cache clean --force
+      - rm -rf node_modules package-lock.json
+      - yarn install
+      - NODE_OPTIONS="--max-old-space-size=8192"
+      - aws s3 cp s3://standard-matrimony-environmental-variables/$REPO/'.env.'$STAGE .env
+      - yarn build
+      - cd build
+  build:
+    commands:
+      - echo "Deploying files..."
+      - aws s3 rm s3://$BUCKET_NAME/ --recursive
+      - aws s3 cp --recursive --acl public-read ./ s3://$BUCKET_NAME/
+      - >
+        aws s3 cp --acl public-read 
+        --cache-control="max-age=0, no-cache, no-store, must-revalidate" 
+        ./index.html s3://${BUCKET_NAME}/
+      - |
+        if [ "$UPDATE_CLOUD_FRONT" = "YES" ]; then
+          echo "Creating cloudfront invalidation..."
+          aws cloudfront create-invalidation --distribution-id $CLOUD_FRONT_ID --paths "/*"
+        fi
+  post_build:
+    commands:
+      - echo "Success!!"

@@ -1,0 +1,17 @@
+{
+  "403": "403",
+  "404": "404",
+  "page_not_exist": "The page you are looking for doesn't exist",
+  "page_not_allowed": "You do not have access to view this page",
+  "go_back_to": "Go back to",
+  "home": "Home",
+  "change_password": "Change Password",
+  "submit": "Submit",
+  "username": "Username",
+  "password": "Password",
+  "confirm_password": "Confirm Password",
+  "name": "Name",
+  "address": "Address",
+  "city": "City",
+  "error_message": "Please check and fix the fields with errors"
+}
