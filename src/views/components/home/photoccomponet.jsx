@@ -15,7 +15,7 @@ const LandingPage = () => {
       <VStack>
           <Box height="500px" backgroundColor="#fb6d0cd9" width="100%">
           <HStack>
-            <Box width="50%" backgroundColor="amber.600" height="450px" marginTop="25px" borderRightRadius="20px">
+            <Box width="50%" backgroundColor="amber.600" height="450px" marginTop="25px" borderRightRadius="30px">
 
             </Box>
           </HStack>
