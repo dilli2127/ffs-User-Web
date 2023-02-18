@@ -15,21 +15,6 @@ import AboutImg from "@assets/images/about.jpg";
 
 const LandingPage = () => {
   const styles = StyleSheet.create({
-    image: {
-      justifyContent: "center",
-      height: "1000px",
-    },
-    image1: {
-      flex: 1,
-      justifyContent: "center",
-      height: "600px",
-    },
-    image2: {
-      flex: 1,
-      justifyContent: "center",
-      height: "200px",
-      width: "100%",
-    },
     text: {
       fontSize: 38,
       lineHeight: 70,
@@ -49,29 +34,34 @@ const LandingPage = () => {
     <>
       <VStack>
         <HStack>
-          <Box width="40%" height={"1000px"}>
-            <ImageBackground
-              source={Posterbanner}
-              resizeMode="cover"
-              style={styles.image}
-            >
-              <Box marginBottom="50rem">
-                <Text style={styles.text}>
-                  <span className="fresh">FRESH</span>
-                  <span className="focuz"> FOCUZ</span>
-                  <span className="studio">STUDIO</span>
-                </Text>
-              </Box>
-            </ImageBackground>
+          <Box
+            width="40%"
+            style={{
+              backgroundImage:
+                'url("https://pub-c9841409a5664691accafda9ed7f1b86.r2.dev/gallerybaner.jpg")',
+              height: 1000,
+              width: "40%",
+              backgroundSize: "cover",
+            }}
+          >
+            <Box>
+              <Text style={styles.text}>
+                <span className="fresh">FRESH</span>
+                <span className="focuz"> FOCUZ</span>
+                <span className="studio">STUDIO</span>
+              </Text>
+            </Box>
           </Box>
           <Box width="60%">
-            <Box height="600px">
-              <ImageBackground
-                source={Landing}
-                resizeMode="cover"
-                style={styles.image1}
-              ></ImageBackground>
-            </Box>
+            <Box
+              style={{
+                backgroundImage:
+                  'url("https://pub-c9841409a5664691accafda9ed7f1b86.r2.dev/062A6124.JPG")',
+                height: 600,
+                width: "100%",
+                backgroundSize: "cover",
+              }}
+            ></Box>
             <Box backgroundColor="#0ad4e094" height="400">
               <Box padding="20px">
                 <Center>
@@ -123,22 +113,23 @@ const LandingPage = () => {
               </Text>
             </Box>
           </Box>
-          <Box width="50%" height="200px" backgroundColor="blue.200">
-            <ImageBackground
-              source={AboutImg}
-              resizeMode="cover"
-              style={styles.image2}
-            >
-              <Text style={styles.text1}>
-                <span className="fresh">Your Wedding</span> +
-                <span className="focuz"> Our Visualization</span>
-                <br />= <span className="studio">
-                  {" "}
-                  Best Love Stories, Ever
-                </span>{" "}
-                !
-              </Text>
-            </ImageBackground>
+          <Box
+            width="50%"
+            height="200px"
+            backgroundColor="blue.200"
+            style={{
+              backgroundImage:
+                'url("https://pub-c9841409a5664691accafda9ed7f1b86.r2.dev/DSC_0319.jpg")',
+              height: 200,
+              width: "50%",
+              backgroundSize: "cover",
+            }}
+          >
+            <Text style={styles.text1}>
+              <span className="fresh">Your Wedding</span> +
+              <span className="focuz"> Our Visualization</span>
+              <br />= <span className="studio"> Best Love Stories, Ever</span>!
+            </Text>
           </Box>
         </HStack>
       </VStack>
