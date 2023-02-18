@@ -12,6 +12,9 @@ import {
 } from "native-base";
 import LandingPage from "@views/components/home/landingpage";
 import PhotoComponent from "@views/components/home/photoccomponet";
+import Card from "@views/components/home/card";
+import Slider from "@views/components/home/slider";
+
 
 
 const UserHome = () => {
@@ -21,6 +24,8 @@ const UserHome = () => {
       <Box>
         <LandingPage/>
         <PhotoComponent/>
+        <Card/>
+        <Slider/>
       </Box>
       </ScrollView>
     </>
