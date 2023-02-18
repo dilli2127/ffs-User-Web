@@ -10,17 +10,15 @@ import {
   Text,
   VStack,
 } from "native-base";
-import Header from "@views/components/header";
 import LandingPage from "@views/components/home/landingpage";
 import PhotoComponent from "@views/components/home/photoccomponet";
 
 
-const UserHome = (props) => {
+const UserHome = () => {
   return (
     <>
      <ScrollView>
       <Box>
-        <Header />
         <LandingPage/>
         <PhotoComponent/>
       </Box>
