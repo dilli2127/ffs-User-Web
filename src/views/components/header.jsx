@@ -29,7 +29,7 @@ const Header = () => {
               <Text color="#ffffff">About</Text>
               <Text color="#ffffff">Services</Text>
               <Text color="#ffffff">Albums</Text>
-              <Text color="#ffffff">Contact Us </Text>
+              <Text color="#ffffff">Contact Us</Text>
             </HStack>
           </Box>
         </HStack>
@@ -37,5 +37,4 @@ const Header = () => {
     </>
   );
 };
-
 export default Header;

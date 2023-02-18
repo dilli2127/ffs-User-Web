@@ -317,7 +317,7 @@ mark {
 }
 ::selection {
   color: #fff;
-  background: #712e5a !important;
+  background: #ff5400 !important;
 }
 .clearfix::before {
   display: table;
