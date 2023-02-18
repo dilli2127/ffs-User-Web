@@ -2,42 +2,33 @@ import React from "react";
 import { Carousel } from "antd";
 import {
   Box,
-  Center,
-  Heading,
-  Hidden,
-  HStack,
-  Pressable,
-  ScrollView,
-  Skeleton,
-  Text,
-  VStack,
 } from "native-base";
+import Image1 from "@assets/images/landing.JPG"
 
 const contentStyle = {
-  height: "360px",
+  height: "720px",
+  width: "100%",
   color: "#fff",
   lineHeight: "160px",
   textAlign: "center",
   background: "#364d79",
- 
 };
-
 const Slider = () => (
   <Box >
-    <Carousel autoplay style={{
- borderRadius:"10px"
+    <Carousel dotPosition="right" effect="scrollx" autoplay style={{
+      borderRadius: "10px"
     }}>
       <div>
-        <h3 style={contentStyle}>1</h3>
+        <img src={Image1} alt="image1" style={contentStyle} />
       </div>
       <div>
-        <h3 style={contentStyle}>2</h3>
+        <img src={Image1} alt="image1" style={contentStyle} />
       </div>
       <div>
-        <h3 style={contentStyle}>3</h3>
+        <img src={Image1} alt="image1" style={contentStyle} />
       </div>
       <div>
-        <h3 style={contentStyle}>4</h3>
+        <img src={Image1} alt="image1" style={contentStyle} />
       </div>
     </Carousel>
   </Box>

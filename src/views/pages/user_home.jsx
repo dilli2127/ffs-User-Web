@@ -22,10 +22,10 @@ const UserHome = () => {
     <>
      <ScrollView>
       <Box>
-        <LandingPage/>
-        <PhotoComponent/>
-        <Card/>
         <Slider/>
+        {/* <LandingPage/> */}
+        {/* <PhotoComponent/> */}
+        {/* <Card/> */}
       </Box>
       </ScrollView>
     </>
