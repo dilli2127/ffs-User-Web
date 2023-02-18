@@ -63,7 +63,7 @@ body {
   outline: none;
 }
 
-.select__control {
+.select__control { 
   border: none !important;
   outline: none !important;
   min-height: var(--react-select-height) !important;
