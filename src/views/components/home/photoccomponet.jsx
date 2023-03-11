@@ -14,20 +14,29 @@ const LandingPage = () => {
   return (
     <>
       <VStack>
-        <Box height="500px" backgroundColor="#fb6d0cd9" width="100%">
-          <HStack>
+        <Box
+          height={["auto", "auto", "500px"]}
+          backgroundColor="#fb6d0cd9"
+          width="100%"
+        >
+          <HStack flexDirection={{ base: "column", md: "row" }}>
             <Box
               marginTop="25px"
-              borderRightRadius="30px"
-              style={{
-                backgroundImage:
-                  'url("https://pub-c9841409a5664691accafda9ed7f1b86.r2.dev/062A9143.jpg")',
-                height: 450,
-                width: "50%",
-                backgroundSize: "cover",
-              }}
-            > </Box>
-            <VStack width="50%" space={5}>
+             
+              width={["auto", "auto", "50%"]}
+            >
+              <div className="zoom2"
+                style={{
+                  backgroundImage:
+                    'url("https://pub-c9841409a5664691accafda9ed7f1b86.r2.dev/062A9143.jpg")',
+                  height: 450,
+                  backgroundSize: "cover",
+                 borderTopRightRadius:"30px",
+                 borderBottomRightRadius:"30px"
+                }}
+              ></div>
+            </Box>
+            <VStack width={["100%","100%","50%"]} space={5}>
               <Box marginTop="10px" marginLeft="10px">
                 <Text fontSize={18}>WHAT DO WE ?</Text>
               </Box>
@@ -41,14 +50,15 @@ const LandingPage = () => {
                 </Text>
               </Box>
               <Center>
-                <Box
+                <Box width={["100%","100%","80%"]}
+                height={["350px","350px","670px"]}
+                marginBottom={["35px"]}
                   style={{
                     backgroundImage:
                       'url("https://pub-c9841409a5664691accafda9ed7f1b86.r2.dev/062A7195.jpg")',
-                    height: 350,
-                    width: "80%",
                     backgroundSize: "cover",
                     borderRadius: "20px",
+                    zoom:"0.52"
                   }}
                 ></Box>
               </Center>

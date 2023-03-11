@@ -24,7 +24,7 @@ const LandingPage = () => {
     },
     text1: {
       fontSize: 30,
-      lineHeight: 60,
+      lineHeight: 100,
       fontWeight: "bold",
       textAlign: "center",
       backgroundColor: "#290a0a82",
@@ -33,18 +33,17 @@ const LandingPage = () => {
   return (
     <>
       <VStack>
-        <HStack>
+        <HStack flexDirection={{ base: "column", md: "row" }}>
           <Box
-            width="40%"
+            width={["100%", "100%", "40%"]}
+            height={["500", "500", "1000"]}
             style={{
               backgroundImage:
                 'url("https://pub-c9841409a5664691accafda9ed7f1b86.r2.dev/gallerybaner.jpg")',
-              height: 1000,
-              width: "40%",
               backgroundSize: "cover",
             }}
           >
-            <Box>
+            <Box marginTop={["10px","10px","80px"]}>
               <Text style={styles.text}>
                 <span className="fresh">FRESH</span>
                 <span className="focuz"> FOCUZ</span>
@@ -52,8 +51,9 @@ const LandingPage = () => {
               </Text>
             </Box>
           </Box>
-          <Box width="60%">
-            <Box
+          <Box width={["100%", "100%", "60%"]}>
+            <div
+              className="zoom1"
               style={{
                 backgroundImage:
                   'url("https://pub-c9841409a5664691accafda9ed7f1b86.r2.dev/062A6124.JPG")',
@@ -61,8 +61,8 @@ const LandingPage = () => {
                 width: "100%",
                 backgroundSize: "cover",
               }}
-            ></Box>
-            <Box backgroundColor="#0ad4e094" height="400">
+            ></div>
+            <Box backgroundColor="#0ad4e094" height={["auto", "auto", "400"]}>
               <Box padding="20px">
                 <Center>
                   <Text fontSize="30px" bold>
@@ -84,15 +84,14 @@ const LandingPage = () => {
                     Browse photography
                   </Button>
                 </Box>
-                <Box backgroundColor="amber.400" height="160px"></Box>
               </Box>
             </Box>
           </Box>
         </HStack>
-        <HStack>
+        <HStack flexDirection={{ base: "column", md: "row" }}>
           <Box
-            width="50%"
-            height="200px"
+            width={["100%", "100%", "50%"]}
+            height="auto"
             backgroundColor="blue.200"
             padding="20px"
           >
@@ -114,14 +113,12 @@ const LandingPage = () => {
             </Box>
           </Box>
           <Box
-            width="50%"
-            height="200px"
+            width={["100%", "100%", "50%"]}
+            height="auto"
             backgroundColor="blue.200"
             style={{
               backgroundImage:
                 'url("https://pub-c9841409a5664691accafda9ed7f1b86.r2.dev/DSC_0319.jpg")',
-              height: 200,
-              width: "50%",
               backgroundSize: "cover",
             }}
           >

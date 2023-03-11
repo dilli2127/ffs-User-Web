@@ -536,27 +536,37 @@ body.fixed .header-fixed .header-limiter nav {
 	 We are also adding a height to demonstrate the scrolling behavior. You can remove
 	 these styles.
  */
-.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input)
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(
+    .ant-select-customize-input
+  )
   .ant-select-selector {
   border-color: #712e5a !important;
 }
 .ant-select:not(.ant-select-disabled):hover .ant-select-selector {
   border-color: #712e5a !important;
 }
-.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input)
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(
+    .ant-select-customize-input
+  )
   .ant-select-selector {
   border-color: #712e5a !important;
 }
 
-.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input)
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(
+    .ant-select-customize-input
+  )
   .ant-select-selector {
   border-color: #712e5a;
   box-shadow: 0 0 0 2px rgba(122, 29, 159, 0.2);
   border-right-width: 1px;
   outline: 0;
 }
-.ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input:focus,
-.ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input-focused {
+.ant-input-status-error:not(.ant-input-disabled):not(
+    .ant-input-borderless
+  ).ant-input:focus,
+.ant-input-status-error:not(.ant-input-disabled):not(
+    .ant-input-borderless
+  ).ant-input-focused {
   border-color: #712e5a;
   box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2);
   border-right-width: 1px;
@@ -570,7 +580,6 @@ body.fixed .header-fixed .header-limiter nav {
 .ant-form-item-label > label {
   color: rgb(255 255 255 / 85%) !important;
 }
-
 
 /* .anticon .anticon-close{ */
 /* position: absolute !important;
@@ -630,25 +639,24 @@ top: 2; */
   opacity: 1;
 }
 
-.access_rights_form label{
-  color:black !important;
+.access_rights_form label {
+  color: black !important;
 }
 
 .ant-form-item-label > label:after {
   content: "" !important;
 }
 
-.access_rights_form .ant-form-item-label{
+.access_rights_form .ant-form-item-label {
   width: 100px;
-  text-align: left  !important;
+  text-align: left !important;
 }
 
-.access_rights_form .ant-form-item-control{
-  flex:1
+.access_rights_form .ant-form-item-control {
+  flex: 1;
 }
 
-.horizontal_container
-{
+.horizontal_container {
   display: flex;
   overflow-x: auto;
   -ms-overflow-style: none;
@@ -674,27 +682,37 @@ top: 2; */
   text-align: left;
 }
 
-.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input)
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(
+    .ant-select-customize-input
+  )
   .ant-select-selector {
   border-color: #712e5a !important;
 }
 .ant-select:not(.ant-select-disabled):hover .ant-select-selector {
   border-color: #712e5a !important;
 }
-.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input)
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(
+    .ant-select-customize-input
+  )
   .ant-select-selector {
   border-color: #712e5a !important;
 }
 
-.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input)
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(
+    .ant-select-customize-input
+  )
   .ant-select-selector {
   border-color: #712e5a;
   box-shadow: 0 0 0 2px rgba(122, 29, 159, 0.2);
   border-right-width: 1px;
   outline: 0;
 }
-.ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input:focus,
-.ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input-focused {
+.ant-input-status-error:not(.ant-input-disabled):not(
+    .ant-input-borderless
+  ).ant-input:focus,
+.ant-input-status-error:not(.ant-input-disabled):not(
+    .ant-input-borderless
+  ).ant-input-focused {
   border-color: #712e5a;
   box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2);
   border-right-width: 1px;
@@ -713,7 +731,6 @@ top: 2; */
   top: 0;
   right: 10px;
   font-size: 14px !important;
-  
 }
 .ant-btn .ant-btn-primary {
   background-color: #712e5a !important;
@@ -733,21 +750,41 @@ top: 2; */
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .hide-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
-.landingimg{
-  background-image: url(../src/assets/images/gallerybaner.jpg);
-
-  height: 800px;
+.zoom {
+  zoom:0.0
 }
-.fresh{
-  color: #EF9801;
+@media only screen and (max-width: 600px) {
+  .zoom {
+    zoom:0.5
+  }
+  .zoom1 {
+    zoom:0.38 
+  }
+  .zoom2 {
+    zoom:0.5 
+  }
 }
-.focuz{
-  color: #0AE0AD;
+.fresh {
+  color: #ef9801;
 }
-.studio{
-  color: #FB6D0C;
+@media only screen and (max-width: 600px) {
+  .fresh {
+    font-size: 30px;
+  }
+  .focuz {
+    font-size: 30px;
+  }
+  .studio {
+    font-size: 30px;
+  }
+}
+.focuz {
+  color: #0ae0ad;
+}
+.studio {
+  color: #fb6d0c;
 }
