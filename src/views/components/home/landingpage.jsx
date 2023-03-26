@@ -103,7 +103,7 @@ const LandingPage = () => {
             </Text>
             <Box>
               <Text fontSize="16px" textAlign="justify" color="block">
-                We are a Candid Wedding Photography Studiolocated in Chennai
+                We are a Candid Wedding Photography Studio Located in Chennai
                 that is rapidly expanding through out India. Our team of wedding
                 photographers is here to help you give a significant, no-stress,
                 and genuine experience while recording your love in a
